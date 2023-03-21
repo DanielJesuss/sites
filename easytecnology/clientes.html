@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TecEasy- Especializado em tecnologia</title>
+	<link rel="stylesheet" type="text/css" href="css/clientes.css">
+	<link rel="stylesheet" type="text/css" href="css/menu-dan.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="img/icon.png">
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header>
+
+	    <div class="navbar-fixed">
+		<nav class="navbar z-depth-0">
+			<div class="nav-wrapper">
+				<h1 class="logo_text"></h1>
+				<a href=""><img class="logo_img" src="img/logo.png" alt="Texto1 "></a>
+
+				<ul class="right light hide-on-med-and-down">
+					<li><a href="index.html">Home</a></li>
+                   <li><a href="sobre.html">Sobre Nós</a></li>
+                   <li><a href="servicos.html">Serviços</a></li>
+                   <li><a href="#">Clientes</a></li>
+                   <li><a href="contato.html">Contato</a></li>
+				</ul>			
+
+				<a href="index.html" data-activates="menu-mobile" class="button-collapse right"><i class="fa fa-navicon" style=""></i></a>
+			</div>
+		</nav>
+		</div>
+    
+	    <!-- MENU MOBILE -->
+		<ul class="side-nav nav-color-fundo" id="menu-mobile">
+			<li><a class="hide-menu" href="index.html">Home</a></li>
+			<li><a class="hide-menu" href="sobre.html">Sobre Nós</a></li>
+			<li><a class="hide-menu" href="servicos.html">Serviços</a></li>
+			<li><a class="hide-menu" href="#">Clientes</a></li>
+			<li><a class="hide-menu" href="contato.html">Contato</a></li>
+		</ul>
+
+	</header>
+
+	 	<!-- TEL EMAIL --> 
+        <div class="tel-email ">
+        (xx) 12345-6789 &nbsp; | &nbsp; email@email.com.br
+        </div>
+
+		<!-- SERVIÇOS --> 
+		<main class="servicos">
+        
+			<article class="servico">
+				<a href="empreendedorismo.php"> <img src="img/servico-01.jpg" alt="Empreendedorismo"></a>
+				<div class="inner">
+					<a href="empreendedorismo.php">Empreendedorismo</a>
+				</div>
+			</article>
+
+			<article class="servico">
+				<a href="autonomo.php"> <img src="img/servico-02.jpg" alt="Autonomo"></a>
+				<div class="inner">
+					<a href="autonomo.php">Autonomo</a>
+				</div>
+			</article>
+
+			<article class="servico">
+				<a href="investimento.php"> <img src="img/servico-03.jpg" alt="Investimentos"></a>
+				<div class="inner">
+					<a href="investimento.php">Investimentos</a>
+				</div>
+			</article>
+	
+
+			<article class="servico">
+				<a href="campanhas.php"> <img src="img/servico-04.jpg" alt="Campanhas publicitarias"></a>
+				<div class="inner">
+					<a href="campanhas.php"> Campanhas publicitárias</a>
+				</div>
+			</article>
+
+			<article class="servico">
+				<a href="md.php"> <img src="img/servico-05.jpg" alt="Marketing digital"></a>
+				<div class="inner">
+					<a href="md.php"> Marketing Digital </a>
+				</div>
+			</article>
+
+			<article class="servico">
+				<a href="cs.php"> <img src="img/servico-06.jpg" alt="Criação de Sites"></a>
+				<div class="inner">
+					<a href="cs.php">Criação de Sites </a>
+			</article>
+
+
+		</main>
+	
+        
+
+		
+
+			 <!-- RODAPÉ -->
+        <footer class="rodape">
+        <p class="copyright">Copyright © Daniel Jesus 2021. Todos os direitos reservados.<br><BR>email@email.com.br<BR>(xx) xxx-xxx</p>
+        <br>
+        <div class="social-icons">
+            <a href="" target="_blank" title="E-mail" class="btn-facebook"><i class="fa fa-facebook"></i></a>
+            <a href="tel:11981645157" class="btn-instagram"><i class="fa fa-instagram" target="_blank" title="Telefone"></i></a>
+            <a href="" target="_blank" title="WhatsApp" class="btn-whatsapp"><i class="fa fa-whatsapp"></i></a>
+            <!--<a href="https://web.whatsapp.com/send?phone=5511981645157" target="_blank"><i class="fa fa-whatsapp"></i></a>-->
+        </div>
+
+        </footer>
+			
+
+
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script>
+			$(".btn-menu").click(function(){
+				$(".menu").show();
+			});
+			$(".btn-close").click(function(){
+				$(".menu").hide();
+			});
+		</script>
+		 <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- MATERIALIZE JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+	<!-- JAVASCRIPT -->
+	<script>
+	    // INICIALIZAÇÃO 
+		$(document).ready(function(){
+        	// MENU MOBILE
+        	$(".button-collapse").sideNav();
+        	// LINK INTERNO
+        	$(".scrollspy").scrollSpy({
+        		scrollOffset: 0
+        	});
+        	// CAROUSEL
+        	$(".carousel.carousel-slider").carousel({
+        		fullWidth:true
+        	});
+        	// MODAL
+        	$(".modal").modal();
+            // TABS
+            $("ul.tabs").tabs();
+            // ESCONDER MENU AO CLICAR
+            $(".hide-menu").click(function(){
+                $(".button-collapse").sideNav("hide");
+            });
+            // AUTOPLAY
+            function autoplay() {
+                $(".carousel").carousel("next");
+                setTimeout(autoplay, 4500);
+            }
+
+            autoplay();
+
+		});        
+        // ADICIONANDO NAVCOLOR
+		$(window).on("scroll", function(){
+			if($(window).scrollTop() > 100) {
+				$(".navbar").addClass("nav-color");
+			} else {
+				$(".navbar").removeClass("nav-color");
+			}
+		});
+	</script>
+	
+
+
+
+</body>
+</html>

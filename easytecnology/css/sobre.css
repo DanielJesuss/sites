@@ -1,0 +1,86 @@
+/* 	RESET */
+* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box;
+font-family: 'arial', sans-serif;}
+
+body {background-color: #f5f5f5;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+.quebra { float:left; width:100%; height:20px;}
+
+.button-collapse {color: black; font-size: 26px;}
+
+/* LOGO */
+.logo_text {font-size: 0; margin: 0;}
+.logo_img {width: 200px; margin: 15px;}
+
+
+/* MENU */
+.navbar {background-color: transparent; transition: background 0.5s linear; height: 90px; margin: -5px; padding-left: 35px;}
+.navbar ul {margin-top: 30px;}
+.navbar ul a {color: black; font-size: 1em;}
+.navbar ul a:hover {background-color:  #2dc7d0; color: #f5f5f5;}
+.nav-color {background-color: #2dc7d0; transition: background 2.5s linear; height: 100px; }
+.nav-wrapper {margin: 5px 80px 5px 45px;}
+/*rgba(0,0,0,0.7)*/
+
+
+/* TEL EMAIL */
+.tel-email {background-color: #2dc7d0; color:#FFF; text-decoration:blink; padding: 10px; margin-top: 25px; 
+	text-align: center;}
+
+/* SOBRE */
+.sobre {background-image: url('../img/textura1.png')}
+.sobre p {line-height: 1.6em; text-align: justify; font-size: 15.5px; font-family: sans-serif;}
+
+
+
+/* RODAPÉ */
+.rodape {width: 100%; float: left; padding: 3% 4%; text-align: center;  background: linear-gradient(to right, #2dc7d0,
+ #5FAB96); margin-top: 50px;}
+.rodape p {text-align: center;}
+.social-icons a {font-size: 2.5em; color: rgba(255, 255, 255, 0.7); margin-right: 5%;}
+/*.social-icons a:hover {color: #2dc7d0;}*/
+.btn-instagram:hover {color: #F6553C;} /*linear-gradient(to right, #5356C8, #F6553C);} #D74958*/
+.btn-whatsapp:hover {color: #34af23;}
+.btn-facebook:hover {color: #3B5998;}
+.social-icons a:last-child {margin-right: 0;}
+.copyright {margin-top: 2%; color: rgba(255, 255, 255, 0.7)}
+
+
+
+
+/* ========== MOBILE FIRST ==========*/
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px) {
+.logo {width: 214px; background: url(../img/logo-mobile.png) center center/214px no-repeat;}
+.btn {font-size: 2em;}
+.nav-wrapper {margin: 5px 6px;}
+.newsletter h3 {font-size: 1.5em;}
+.card-image-horizontal {display: none;}
+}
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+.nav-wrapper {margin: 5px 20px ;}
+
+}
+/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+@media screen and (min-width: 960px) {
+.title {width: 70%; float: left; text-align: left;}
+.title h2 {font-size: 3em;}
+.title h3 {font-size: 2em;}
+.sobre p { margin-left: -80px;}
+
+}
+/* LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 1280px) {
+.btn-menu {display: none;}
+.btn-close {display: none;}
+.menu {width: auto; height: 56px; line-height: 56px; float: right; background-color: #f5f5f5; 
+display: block !important; position: static;}
+.menu li {padding: 0; float: left;}
+.menu li a {color:#fff; font-size: 1em; padding: 15px; }
+.menu li a:hover {border: none; color:#130400; }
+.servicos {padding-left: 90px;}
+}
